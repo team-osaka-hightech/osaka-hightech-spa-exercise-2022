@@ -16,11 +16,21 @@
 
 <body>
   <div id="app">
-    <!-- TODO: この中に State を利用した HTML を書く -->
+    <h2>API キー</h2>
+    <input type="text" v-model="api">
+
+    <h2>都道府県</h2>
+    <prefecture-checkbox></prefecture-checkbox>
+
+    <h2>人口グラフ</h2>
+    <population-bar-plot
+      v-bind:api="api"
+    ></population-bar-plot>
   </div>
 </body>
 
 <!-- 独自 JavaScript の読み込み -->
+<script src="api.js"></script>
 <script src="index.js"></script>
 
 </html>
