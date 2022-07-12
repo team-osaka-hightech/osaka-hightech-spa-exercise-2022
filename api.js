@@ -8,7 +8,7 @@ async function getPrefctures(apiKey) {
     );
   
     // 同様に受信結果を変換する処理 (今回であれば JSON に変換する処理) もいつ終わるか分からないが、
-    // await というキーワードで待つことができる
+    // await とsいうキーワードで待つことができる
     const json = await response.json();
   
     return json;
